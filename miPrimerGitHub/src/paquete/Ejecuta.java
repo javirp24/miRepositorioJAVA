@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class Ejecuta {
 									/*ENUNCIADO*/
-		/* Programa que lee nombre y aÒo de nacimiento de una serie de alumnos hasta introducir
-		   como nombre de alumno ìfinî. En ese momento mostrar· la edad media de los alumnos y
-		   el nombre del alumno menor. NOTA: Al introducir como nombre ìfinî, no nos ha de pedir el
-		   aÒo de nacimiento.*/
+				/* Programa que lee nombre y a√±o de nacimiento de una serie de alumnos hasta introducir
+				   como nombre de alumno ‚Äúfin‚Äù. En ese momento mostrar√° la edad media de los alumnos y
+				   el nombre del alumno menor. NOTA: Al introducir como nombre ‚Äúfin‚Äù, no nos ha de pedir el
+				   a√±o de nacimiento.*/
 
 	public static void main(String[] args) {
-		
 		String nombre,alumnoMenor="";
-		int aÒo, suma=0, edad, cont=0, edadMenor=Integer.MAX_VALUE;
+		int a√±o, suma=0, edad, cont=0, edadMenor=Integer.MAX_VALUE;
 		float media=0;
 		Scanner sc=new Scanner(System.in);
 		
@@ -21,9 +20,9 @@ public class Ejecuta {
 		nombre=sc.nextLine();
 		
 		if(!nombre.equals("fin")) {
-			System.out.println("introduce aÒo de nacimiento de " + nombre);
-			aÒo=Integer.parseInt( sc.nextLine() );
-			edad=2021-aÒo;
+			System.out.println("introduce a√±o de nacimiento de " + nombre);
+			a√±o=Integer.parseInt( sc.nextLine() );
+			edad=2021-a√±o;
 			cont++;
 			suma += edad;
 			media= (float)suma/cont;
@@ -34,8 +33,6 @@ public class Ejecuta {
 		}
 		}while(!nombre.equals("fin"));
 		
-		System.out.println("la edad media es " + media + " y el alumno mas pequeÒo es " + alumnoMenor);
-		
-		System.out.println("hola");
+		System.out.println("El alumno con menor edad es: " + alumnoMenor + " y la edad media de edades es: " + media);
 	}
 }
