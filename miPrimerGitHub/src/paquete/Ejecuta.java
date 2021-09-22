@@ -3,7 +3,7 @@ package paquete;
 import java.util.Scanner;
 
 public class Ejecuta {
-									/*ENUNCIADO	*/
+									/*ENUNCIADO*/
 		/* Programa que lee nombre y año de nacimiento de una serie de alumnos hasta introducir
 		   como nombre de alumno “fin”. En ese momento mostrará la edad media de los alumnos y
 		   el nombre del alumno menor. NOTA: Al introducir como nombre “fin”, no nos ha de pedir el
@@ -35,5 +35,7 @@ public class Ejecuta {
 		}while(!nombre.equals("fin"));
 		
 		System.out.println("la edad media es " + media + " y el alumno mas pequeño es " + alumnoMenor);
+		
+		System.out.println("hola");
 	}
 }
